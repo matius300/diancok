@@ -18,8 +18,6 @@ clear
 echo "Go to: https://dashboard.ngrok.com/signup"
 read -p "Paste Token Ngrok Nok Kene: " CRP
 ./ngrok authtoken $CRP 
-sudo apt install -y xrdp > /dev/null 2>&1
-sudo service xrdp start > /dev/null 2>&1
 
 clear
 echo "Repo: AZAZIL HACKING"
