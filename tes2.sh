@@ -52,4 +52,4 @@ echo "==========================="
 echo ""
 
 echo "NOTE: Don't close this tab to keep your RDP still running"
-sleep 9876543210
+
