@@ -20,16 +20,13 @@ read -p "Paste Token Ngrok Nok Kene: " CRP
 ./ngrok authtoken $CRP 
 
 clear
-echo "Repo: AZAZIL HACKING"
-echo "======================="
-echo "choose ngrok region (for better connection)."
-
-./ngrok tcp --region ap 3389 &>/dev/null &
+echo ===== Azazil =====
+echo Proses Dulu Lan Sabar Rien 
+./ngrok tcp --region ap 4000 &>/dev/null &
 sleep 1
 if curl --silent --show-error http://127.0.0.1:4040/api/tunnels  > /dev/null 2>&1; then echo OK; else echo "Ngrok Error! Please try again!" && sleep 1 && goto ngrok; fi
-docker run --rm -d --network host --privileged --name nomachine-xfce4 -e PASSWORD=654321 -e USER=user --cap-add=SYS_PTRACE --shm-size=1g thuonghai2711/nomachine-ubuntu-desktop:windows10
+docker run --rm -d --network host --privileged --name nomachine-xfce4 -e PASSWORD=654321 -e USER=jancok1 --cap-add=SYS_PTRACE --shm-size=1g thuonghai2711/nomachine-ubuntu-desktop:windows10
 clear
-
 echo "NoMachine: https://www.nomachine.com/download"
 echo Done! NoMachine Information:
 echo IP Address:
@@ -37,4 +34,4 @@ curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*publ
 echo User: user
 echo Passwd: 654321
 echo "VM can't connect? Restart Cloud Shell then Re-run script."
-seq 1 43200 | while read i; do echo -en "\r Running .     $i s /43200 s";sleep 0.1;echo -en "\r Running ..    $i s /43200 s";sleep 0.1;echo -en "\r Running ...   $i s /43200 s";sleep 0.1;echo -en "\r Running ....  $i s /43200 s";sleep 0.1;echo -en "\r Running ..... $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1;echo -en "\r Running  .... $i s /43200 s";sleep 0.1;echo -en "\r Running   ... $i s /43200 s";sleep 0.1;echo -en "\r Running    .. $i s /43200 s";sleep 0.1;echo -en "\r Running     . $i s /43200 s";sleep 0.1; done
+seq 1 180000 | while read i; do echo -en "\r Running .     $i s /180000 s";sleep 0.1;echo -en "\r Running ..    $i s /180000 s";sleep 0.1;echo -en "\r Running ...   $i s /180000 s";sleep 0.1;echo -en "\r Running ....  $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running     . $i s /180000 s";sleep 0.1;echo -en "\r Running  .... $i s /180000 s";sleep 0.1;echo -en "\r Running   ... $i s /180000 s";sleep 0.1;echo -en "\r Running    .. $i s /180000 s";sleep 0.1;echo -en "\r Running     . $i s /180000 s";sleep 0.1;echo -en "\r Running .     $i s /180000 s";sleep 0.1;echo -en "\r Running ..    $i s /180000 s";sleep 0.1;echo -en "\r Running ...   $i s /180000 s";sleep 0.1;echo -en "\r Running ....  $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running     . $i s /180000 s";sleep 0.1;echo -en "\r Running    .. $i s /180000 s";sleep 0.1;echo -en "\r Running   ... $i s /180000 s";sleep 0.1;echo -en "\r Running  .... $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running .     $i s /180000 s";sleep 0.1;echo -en "\r Running ..    $i s /180000 s";sleep 0.1;echo -en "\r Running ...   $i s /180000 s";sleep 0.1;echo -en "\r Running ....  $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running     . $i s /180000 s";sleep 0.1;echo -en "\r Running    .. $i s /180000 s";sleep 0.1;echo -en "\r Running   ... $i s /180000 s";sleep 0.1;echo -en "\r Running  .... $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running .     $i s /180000 s";sleep 0.1;echo -en "\r Running ..    $i s /180000 s";sleep 0.1;echo -en "\r Running ...   $i s /180000 s";sleep 0.1;echo -en "\r Running ....  $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running     . $i s /180000 s";sleep 0.1;echo -en "\r Running    .. $i s /180000 s";sleep 0.1;echo -en "\r Running   ... $i s /180000 s";sleep 0.1;echo -en "\r Running  .... $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running .     $i s /180000 s";sleep 0.1;echo -en "\r Running ..    $i s /180000 s";sleep 0.1;echo -en "\r Running ...   $i s /180000 s";sleep 0.1;echo -en "\r Running ....  $i s /180000 s";sleep 0.1;echo -en "\r Running ..... $i s /180000 s";sleep 0.1;echo -en "\r Running     . $i s /180000 s";sleep 0.1;echo -en "\r Running    .. $i s /180000 s";sleep 0.1;echo -en "\r Running   ... $i s /180000 s";sleep 0.1;echo -en "\r Running  .... $i s /180000 s";sleep 0.1; done
