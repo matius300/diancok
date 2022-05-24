@@ -28,8 +28,6 @@ if curl --silent --show-error http://127.0.0.1:4040/api/tunnels  > /dev/null 2>&
 docker run --rm -d --network host --privileged --name nomachine-xfce4 -e PASSWORD=654321 -e USER=jancok2 --cap-add=SYS_PTRACE --shm-size=1g thuonghai2711/nomachine-ubuntu-desktop:windows10
 clear
 
-sudo apt remove microsoft-edge-dev -y&&wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb&&sudo dpkg -i google-chrome-stable_current_amd64.deb&&apt --fix-broken install -y&&sudo dpkg -i google-chrome-stable_current_amd64.deb&&sudo apt-get install xdotool -y
-sleep 1
 echo Done! NoMachine Information:
 echo IP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p' 
