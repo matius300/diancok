@@ -24,9 +24,7 @@ echo "======================"
 echo "INSTALLING X-RDP DONE"
 echo "======================"
 echo ""
-sudo apt install -y xrdp &
-sudo service xrdp start &
-sudo apt install pciutils
+
 echo ""
 
 clear
