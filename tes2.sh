@@ -23,6 +23,9 @@ echo "======================"
 echo "INSTALLING X-RDP DONE"
 echo "======================"
 echo ""
+sudo apt install xrdp
+sudo service xrdp start
+sudo apt install pciutils
 echo ""
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F > /dev/null 2>&1
 sudo apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubuntu bionic main" > /dev/null 2>&1
