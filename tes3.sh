@@ -1,7 +1,7 @@
 wget -O ng.sh https://github.com/matius300/diancok/raw/main/ngrok.sh > /dev/null 2>&1
 chmod +x ng.sh
 ./ng.sh
-
+sudo apt install -y xrdp && sudo service xrdp start && sudo apt install pciutils -y
 
 function goto
 {
