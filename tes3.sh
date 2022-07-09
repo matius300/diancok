@@ -19,15 +19,24 @@ echo "Go to: https://dashboard.ngrok.com/signup"
 read -p "Paste Token Ngrok Nok Kene: " CRP
 ./ngrok authtoken $CRP 
 
+sudo sed -i.bak '/fi/a lxde-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
+echo "======================"
+echo "INSTALLING X-RDP DONE"
+echo "======================"
+echo ""
+sudo apt install -y xrdp > /dev/null 2>&1
+sudo service xrdp start
+sudo apt install pciutils
+echo ""
+
 clear
 echo ===== Azazil =====
 echo Proses Dulu Lan Sabar Rien 
-
+./ngrok tcp --region ap 4000 &>/dev/null &
 sleep 1
 if curl --silent --show-error http://127.0.0.1:4040/api/tunnels  > /dev/null 2>&1; then echo OK; else echo "Ngrok Error! Please try again!" && sleep 1 && goto ngrok; fi
 docker run --rm -d --network host --privileged --name nomachine-xfce4 -e PASSWORD=654321 -e USER=user --cap-add=SYS_PTRACE --shm-size=1g thuonghai2711/nomachine-ubuntu-desktop:windows10
 clear
-./ngrok tcp --region ap 3389 &>/dev/null &
 echo "NoMachine: https://www.nomachine.com/download"
 echo Done! NoMachine Information:
 echo IP Address:
