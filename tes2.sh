@@ -17,13 +17,12 @@ sudo apt install lxde -y > /dev/null 2>&1
 wget http://sg.mirrors.cloud.aliyuncs.com/debian/pool/main/m/mesa/libxatracker2_18.3.6-2+deb10u1_amd64.deb
 dpkg -i libxatracker2_18.3.6-2+deb10u1_amd64.deb&&apt --fix-broken install -y&&dpkg -i libxatracker2_18.3.6-2+deb10u1_amd64.deb&&sudo apt install lightdm -y&&sudo apt install lxde -y&&sudo dpkg-reconfigure lightdm
 
-sudo apt install -y xrdp > /dev/null 2>&1
 sudo sed -i.bak '/fi/a lxde-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
 echo "======================"
 echo "INSTALLING X-RDP DONE"
 echo "======================"
 echo ""
-sudo apt install xrdp
+sudo apt install -y xrdp > /dev/null 2>&1
 sudo service xrdp start
 sudo apt install pciutils
 echo ""
