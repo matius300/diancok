@@ -19,7 +19,7 @@ echo "Go to: https://dashboard.ngrok.com/signup"
 read -p "Paste Token Ngrok Nok Kene: " CRP
 ./ngrok authtoken $CRP 
 
-sudo sed -i.bak '/fi/a lxde-session \n' /etc/xrdp/startwm.sh > /dev/null 2>&1
+
 echo "======================"
 echo "INSTALLING X-RDP DONE"
 echo "======================"
